@@ -1,0 +1,138 @@
+import type {StockFactoryProps} from './factoryConfig';
+
+export type FactoryPreset = {
+  name: string;
+  niche: string;
+  values: Partial<StockFactoryProps>;
+};
+
+export const factoryPresets: FactoryPreset[] = [
+  {
+    name: 'MotionVora Ember Linear',
+    niche: 'Abstract stock',
+    values: {
+      bgStyle: 'linear',
+      overlayStyle: 'embers',
+      overlayColorMode: 'white',
+      colors: ['#3e040a', '#4bd83b', '#abb3f7', '#e7de8d', '#043934'],
+      speed: 1,
+      complexity: 0.35,
+      distortion: 0.4,
+      gradientAngle: 12,
+      grain: 0.1,
+      bandCount: 10,
+      glowIntensity: 0.54,
+      zoom: 0.88,
+    },
+  },
+  {
+    name: 'Fintech Neural Field',
+    niche: 'Finance / SaaS',
+    values: {
+      bgStyle: 'neuralPlexus',
+      overlayStyle: 'dataFlow',
+      overlayColorMode: 'accent',
+      colors: ['#07131b', '#00c2ff', '#93c5fd', '#10b981'],
+      material: 'glass',
+      forceField: 'orbital',
+      speed: 0.82,
+      complexity: 0.62,
+      distortion: 0.16,
+      glowIntensity: 0.38,
+      particleCount: 132,
+    },
+  },
+  {
+    name: 'Luxury Refraction',
+    niche: 'Beauty / premium',
+    values: {
+      bgStyle: 'glassRefraction',
+      overlayStyle: 'luxuryBeams',
+      overlayColorMode: 'white',
+      colors: ['#160d13', '#f4cdef', '#d6e27e', '#fdba74'],
+      material: 'liquidMetal',
+      speed: 0.42,
+      complexity: 0.32,
+      distortion: 0.22,
+      glowIntensity: 0.72,
+      grain: 0.035,
+    },
+  },
+  {
+    name: 'Medical Topographic',
+    niche: 'Health / science',
+    values: {
+      bgStyle: 'topographic',
+      overlayStyle: 'crosshair',
+      overlayColorMode: 'accent',
+      colors: ['#081420', '#60a5fa', '#2dd4bf', '#dbeafe'],
+      material: 'glass',
+      speed: 0.48,
+      complexity: 0.4,
+      distortion: 0.1,
+      bandCount: 18,
+      particleCount: 64,
+    },
+  },
+  {
+    name: 'AI Aurora Mesh',
+    niche: 'AI / tech',
+    values: {
+      bgStyle: 'auroraFlow',
+      overlayStyle: 'plexus',
+      overlayColorMode: 'rainbow',
+      colors: ['#050818', '#22d3ee', '#6366f1', '#f472b6'],
+      forceField: 'vortex',
+      speed: 0.72,
+      complexity: 0.66,
+      distortion: 0.26,
+      glowIntensity: 0.52,
+      particleCount: 144,
+    },
+  },
+  {
+    name: 'Editorial Holographic',
+    niche: 'Social / editorial',
+    values: {
+      bgStyle: 'holographicFoil',
+      overlayStyle: 'prismEdges',
+      overlayColorMode: 'rainbow',
+      colors: ['#0d1020', '#abb3f7', '#4bd83b', '#f4cdef', '#e7de8d'],
+      speed: 0.6,
+      complexity: 0.5,
+      distortion: 0.34,
+      colorRotation: 24,
+      glowIntensity: 0.46,
+    },
+  },
+  {
+    name: 'Rain Product Mood',
+    niche: 'Product background',
+    values: {
+      bgStyle: 'rainStreaks',
+      overlayStyle: 'rain',
+      overlayColorMode: 'white',
+      colors: ['#061018', '#1e3a5f', '#7dd3fc', '#dbeafe'],
+      speed: 1.14,
+      complexity: 0.44,
+      distortion: 0.12,
+      grain: 0.08,
+      motionBlur: 0.72,
+    },
+  },
+  {
+    name: 'Organic Wellness Bloom',
+    niche: 'Wellness',
+    values: {
+      bgStyle: 'bubbleRise',
+      overlayStyle: 'bubbles',
+      overlayColorMode: 'accent',
+      colors: ['#08161a', '#86efac', '#7dd3fc', '#f9a8d4'],
+      speed: 0.38,
+      complexity: 0.48,
+      distortion: 0.2,
+      glowIntensity: 0.3,
+      particleCount: 88,
+    },
+  },
+];

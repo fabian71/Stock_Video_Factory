@@ -1,0 +1,38 @@
+{
+  "name": "stock-video-factory-engine",
+  "version": "2.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "next dev -p 3001",
+    "studio": "remotion studio",
+    "build": "tsc --noEmit",
+    "next:build": "next build",
+    "render": "remotion render StockVideoFactory out/stock-video.mp4",
+    "batch:plan": "node scripts/generate-batch.mjs",
+    "batch:render": "node scripts/render-batch.mjs"
+  },
+  "dependencies": {
+    "@dimforge/rapier2d-compat": "^0.15.0",
+    "@react-three/fiber": "^9.0.0",
+    "@remotion/cli": "^4.0.270",
+    "@remotion/player": "^4.0.270",
+    "@remotion/renderer": "^4.0.270",
+    "@remotion/three": "^4.0.270",
+    "chroma-js": "^3.1.2",
+    "next": "^16.0.7",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "remotion": "^4.0.270",
+    "three": "^0.174.0",
+    "zod": "4.3.6"
+  },
+  "devDependencies": {
+    "@types/chroma-js": "^2.4.4",
+    "@types/node": "^22.13.9",
+    "@types/react": "^19.0.10",
+    "@types/react-dom": "^19.0.4",
+    "@types/three": "^0.174.0",
+    "typescript": "^5.8.2"
+  }
+}
